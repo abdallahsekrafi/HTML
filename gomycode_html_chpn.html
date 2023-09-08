@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<title>My portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+<body class="w3-black">
+
+<!-- Navigation bar (navbar) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="#work" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>WORK</p>
+  </a>
+  <a href="#resume" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-file w3-xxlarge"></i>
+    <p>RESUME</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
+
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Sekrafi Abdallah</h1>
+    <p>Graphic Designer and FullStack JS Developer</p>
+    <img src="abd.jpg" alt="boy" class="w3-image" width="360" height="380">
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">Sekrafi Abdallah is :</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>a java web developer with experience in spring boot framework, MySQL, BootStrap and Thymeleaf. 
+      Also a graphic designer, 2D animator with experience in Photoshop, Inkscape, Moho and Filmora
+    </p>
+    <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
+    <p class="w3-wide">Graphic Design</p>
+    <div class="w3-white">
+      <div class="w3-green" style="height:28px;width:75%"></div>
+    </div>
+    <p class="w3-wide">FullStack JS ( with GoMyCode )</p>
+    <div class="w3-white">
+      <div class="w3-green" style="height:28px;width:100%"></div>
+    </div>
+  <!-- End About Section -->
+  </div>
+  
+  <!-- Work Section -->
+  <div class="w3-padding-64 w3-content" id="work">
+    <h2 class="w3-text-light-grey">My Last 2D animation about Twitter, Threads and X</h2>
+    <p>a real work in 31-07-2023</p>
+    <hr style="width:200px" class="w3-opacity">
+    <br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/6shQvpsWY-w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+
+    </iframe>
+     <!-- End Work Section -->
+  </div>
+
+  <!-- Resume Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="resume">
+    <h2 class="w3-text-light-grey">My CV</h2>
+    <br>
+    <p class="w3-wide">Senior Information Systems Manager : 2007 --> until the moment</p>
+    <div class="w3-white">
+      <div class="w3-green" style="height:28px;width:100%"></div>
+    </div>
+    <p class="w3-wide">Java web developper (freelance) : 2016 --> 2020</p>
+    <div class="w3-white">
+      <div class="w3-blue" style="height:28px;width:75%"></div>
+    </div>
+    <p class="w3-wide">Graphic Designer and 2D Animator (freelance) : 2016 --> until the moment</p>
+    <div class="w3-white">
+      <div class="w3-orange" style="height:28px;width:60%"></div>
+    </div>
+  <!-- End Resume Section -->
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contact Me</h2>
+    <br>
+    <p>Send me a message:</p>
+
+    <form >
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+  <!-- End Contact Section -->
+  </div>
+  
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-youtube w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
+</html>
